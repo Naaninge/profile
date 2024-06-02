@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-clr: #f61aaa;
+  --secondary-clr: #ffa678;
+  --background-clr: #1e2b3b;
+  --heading-clr: #04f6bd;
+  --text-clr: #fff;
+}
+
+.light-theme {
+  --primary-clr: #f61aaa;
+  --secondary-clr: #ffa678;
+  --background-clr: #f8f8ff;
+  --heading-clr: #ffa678;
+  --text-clr: #1e2b3b;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-clr),
+    var(--secondary-clr)
+  );
+  font-family: "Montserrat", sans-serif;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  align-items: center;
+}
+
+article.card {
+  padding: 2rem;
+  width: 400px;
+  height: 500px;
+  border-radius: 0.5rem;
+  background-color: var(--background-clr);
+  position: relative;
+  -webkit-box-shadow: 6px 7px 24px -13px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 6px 7px 24px -13px rgba(66, 68, 90, 1);
+  box-shadow: 6px 7px 24px -13px rgba(66, 68, 90, 1);
+}
+
+/* ======================= Profile Image ==================*/
+.image-div {
+  width: 100%;
+  text-align: center;
+}
+.image-div img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid var(--heading-clr);
+  padding: 5px;
+}
+
+section {
+  padding-top: 1rem;
+}
+
+section header {
+  text-align: center;
+}
+ul {
+  list-style: none;
+}
+h3 {
+  color: var(--primary-clr);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+h6 {
+  color: var(--heading-clr);
+  font-family: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.personal-info {
+  padding-bottom: 4rem;
+}
+p.desc {
+  color: var(--text-clr);
+  padding-top: 1.5rem;
+  opacity: 0.7;
+  font-weight: 300;
+}
+
+/* ================== Social Icons======================= */
+.social-links {
+  margin: 1rem 0;
+  position: relative;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.social-links a {
+  border-radius: 50%;
+  color: var(--text-clr);
+  /* opacity: 0.7; */
+  margin-right: 1rem;
+  transition: all 0.3s linear;
+  font-size: 1rem;
+}
+
+.social-links a:hover {
+  /* background-color: #fff; */
+  color: var(--heading-clr);
+  /* border: 1px solid var(--lime-green); */
+}
+
+/* ===================== Tabs ============================  */
+div.tabs {
+  display: flex;
+  gap: 5px;
+  height: 2rem;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  left: 3px;
+  padding: 0 1rem;
+}
+
+.btn {
+  background-color: transparent;
+  color: var(--text-clr);
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.border-bottom {
+  border-bottom: 2px solid var(--heading-clr);
+  transition: all 0.3s linear;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ==================== Projects ====================== */
+
+.all-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.all-projects div {
+  position: relative;
+  width: 100%;
+}
+.all-projects div img {
+  border-radius: 8px;
+  border: 2px solid var(--heading-clr);
+}
+
+.project-section {
+  padding-bottom: 3rem;
+}
+
+.more {
+  text-decoration: none;
+  color: var(--text-clr);
+  opacity: 0.7;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.more:hover {
+  color: var(--heading-clr);
+}
+
+.top-left {
+  grid-column: 1;
+  grid-row: 1;
+}
+.bottom-left {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.right {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+.right img {
+  height: 100%;
+}
+.p-name {
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 0.75rem;
+  color: #fff;
+  background-color: var(--heading-clr);
+  padding: 0.4rem;
+  border-top-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+/* ===================== info Section================== */
+.info-section div.skills {
+  /* padding: 1rem 0; */
+}
+.info-section div header h3 {
+  padding: 1rem 0;
+}
+.education {
+  padding-top: 1rem;
+  color: var(--heading-clr);
+  font-weight: 200;
+  font-size: 10px;
+}
+
+.education i {
+  padding-right: 2px;
+  font-size: 12px;
+}
+.skills {
+  text-align: center;
+  padding-top: 1rem;
+}
+.skills h6 {
+  padding-bottom: 1rem;
+}
+.skills ul {
+  padding: 0.4rem 0;
+}
+.skills ul li {
+  text-transform: uppercase;
+  color: var(--text-clr);
+  opacity: 0.7;
+  font-weight: 100;
+  padding-bottom: 0.2rem;
+}
+i.fab {
+  font-size: 1.5rem;
+}
+
+/* ==================== Theme ===================== */
+
+.toggle {
+  position: absolute;
+  top: 10px;
+  font-size: 2rem;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+  color: var(--heading-clr);
+}
+.hide {
+  display: none;
+}
+i.inner-toggle-icons {
+  font-size: 8px;
+}
+
+.bi-moon-stars-fill {
+  position: absolute;
+  top: 24px;
+  right: 1.75rem;
+  color: var(--heading-clr);
+}
+.bi-sun-fill {
+  position: absolute;
+  top: 24px;
+  right: 1rem;
+  color: var(--secondary-clr);
+}
+/* =====================Tablet======================== */
+@media screen and (max-width: 700px) {
+  article.card {
+    height: 500px;
+  }
+
+  .code-btn {
+    left: 40%;
+  }
+}
+/* ====================== Mobile============================= */
+@media screen and (max-width: 500px) {
+  article.card {
+    width: 80vw;
+    height: max-content;
+  }
+
+  .all-projects {
+    grid-template-columns: 1fr;
+    height: 70%;
+  }
+  .all-projects div img {
+    height: 100px;
+  }
+  .top-left {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .bottom-left {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .right {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .btn {
+    font-size: 0.74rem;
+    /* width: 100%; */
+  }
+}
+
+@media screen and (max-width: 233px) {
+  .image-div img {
+    height: 100px;
+    width: 100px;
+  }
+  .toggle {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 0.5rem;
+    /* width: 100%; */
+  }
+  .p-name {
+    font-size: 0.5rem;
+  }
+}
+
+.content > article {
+  display: none;
+}
+
+.content > article.show {
+  display: block;
+}

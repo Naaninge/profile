@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naaninge Tomanga | Profile</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./src/styles.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  </head>
+  <body>
+    <main>
+        <article class="card">
+            <div class="theme ">
+              <span class="dark-theme"> <i class="bi bi-moon-stars-fill inner-toggle-icons"></i>
+                <i class="bi bi-toggle-off toggle" data-toggle="toggle-off"></i>
+              </span>
+              <span class="light-theme hide">
+                <i class="bi bi-sun-fill inner-toggle-icons "></i>
+                <i class="bi bi-toggle-on toggle  " data-toggle="toggle-on"></i>
+              </span>  
+            </div>
+            <div class="content">
+                <article class="tab-about show">
+                  <div class="image-div">
+                      <img src="./images/img.png" alt="profile" >
+                  </div>
+                  <section>
+                      <header>
+                          <h3>Naaninge Tomanga</h3>
+                          <h6 class="job">Software Developer</h6>
+                      </header>
+                      <div class="personal-info"> 
+                            <p class="desc">
+                               Creative Software developer with a flair for designing seamless user interfaces. Transforming visions into captivating web experiences with precision and style.
+                             </p>
+                             
+                              <h6 class="education"><i class="fas fa-user-graduate"></i> Bachelor of Computer Science: Software Development</p>
+                            
+                         
+                      </div>
+                      
+                      <div class="social-links">
+                        <!-- github -->
+                        <a href="https://github.com/Naaninge" target="_blank" rel="noopener noreferrer"><i class="bi bi-github"></i></a>
+                        <!-- linkedin-->
+                        <!-- wwww.linkedin.com/in/naaninge-tomanga -->
+                        <a href="https://linkedin.com/in/naaninge-tomanga " target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin"></i></a>
+                        <!-- email -->
+                        <a href="mailto: susanatomanga17@gmail.com" target="_blank" rel="noopener noreferrer"><i class="bi bi-envelope-fill"></i></a>
+              
+                    </div>
+                  </section>
+
+                </article>  
+                <article class="tab-projects">
+                  <section class="project-section">
+                    <header><h3> Projects</h3></header>
+                    <div class="all-projects">
+                
+                     <div class="top-left">
+                     <span class="p-name">eccommerce</span>
+                     <a href="#"><img src="./images/eccommerce.jpg" alt="img"></img></a>
+                     
+                     </div>
+                
+                     <div class="bottom-left">
+                      <span class="p-name">entertainment</span>
+                      <a href="https://naaninge.github.io/entertainment-app/index.html"> <img src="./images/movie.jpg" alt="img"></img></a>
+                         
+                     </div>
+                
+                      <div class="right">
+                       <span class="p-name">kanban </span>
+                       <a href="#"><img src="./images/kanban.jpg" alt="img"></img></a>
+                            
+                    </div>
+                    </div>
+                    <a href="#" class="more" >more ...</a>
+                    </section>
+                    
+                </article>
+                <article class="tab-info">
+                  <section class="info-section">
+                    <!-- <div class="education">
+                      <header> <h3> Education</h3></header>
+                      <p>Bachelor of Computer Science: Software Development</p>
+                      <p>Namibia University of Science and Technology </p>
+                      <p>2020 -2023</p>
+                      <p>Windhoek ,Namibia</p>
+                    </div> -->
+                    
+                    <div class="skills" >
+                      <header> <h3>Skills</h3></header>
+                      <h6>languages</h6>
+                      <ul>
+                        <!-- add python -->
+                        <li><i class="fab fa-html5"></i></li>
+                        <li><i class="fab fa-css3-alt"></i></li>
+                        <li><i class="fab fa-js-square"></i></li>
+                      </ul>
+                      <h6>framework</h6>
+                      <ul>
+                        <!-- add express mondodb -->
+                        <li><i class="fab fa-bootstrap"></i></li>
+                      </ul>
+                      <h6>library</h6>
+                      <ul>
+                        <li><i class="fab fa-react"></i></li>
+                      </ul>
+
+                    </div>
+                  
+                  </section>
+                  
+                </article>
+             </div>
+            <div class="tabs">
+                <button class="about btn border-bottom " data-tab="tab-about" >About</button>
+                <button class="projects btn" data-tab="tab-projects" >Projects</button>
+                <button class="contact btn" data-tab="tab-info" >Info</button>
+            </div>
+        </article>
+    </main>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
