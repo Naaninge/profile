@@ -160,15 +160,20 @@ img {
   gap: 0.5rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
+  width: 100%;
+  
 }
 
 .all-projects div {
   position: relative;
   width: 100%;
+  
 }
 .all-projects div img {
   border-radius: 8px;
   border: 2px solid var(--heading-clr);
+  object-fit: cover;
+  object-position: center;
 }
 
 .project-section {
@@ -215,9 +220,7 @@ img {
   border-bottom-right-radius: 8px;
 }
 /* ===================== info Section================== */
-.info-section div.skills {
-  /* padding: 1rem 0; */
-}
+
 .info-section div header h3 {
   padding: 1rem 0;
 }
@@ -240,6 +243,9 @@ img {
   padding-bottom: 1rem;
 }
 .skills ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
   padding: 0.4rem 0;
 }
 .skills ul li {
